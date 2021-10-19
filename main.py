@@ -54,11 +54,11 @@ def predictRouteClient():
         else:
             print('Nothing Matched')
     except ValueError:
-        return Response("Error Occurred! %s" %ValueError)
+        return Response("Error Occurred! in 1st %s" %ValueError)
     except KeyError:
-        return Response("Error Occurred! %s" %KeyError)
+        return Response("Error Occurred! in 2nd %s" %KeyError)
     except Exception as e:
-        return Response("Error Occurred! %s" %e)
+        return Response("Error Occurred! %s 3rd" %e)
 
 
 
